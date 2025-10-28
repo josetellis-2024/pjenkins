@@ -1,0 +1,14 @@
+name: Hello World
+
+on:
+  push:        # Run the action whenever code is pushed
+    branches:
+      - main   # or whatever branch you prefer
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, world!"
